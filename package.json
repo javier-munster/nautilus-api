@@ -1,0 +1,38 @@
+{
+    "name": "nautilus-api",
+    "version": "0.0.1",
+    "description": "Back end API for Nautilus project",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon .",
+        "test": "NODE_ENV=test nyc --reporter=html --reporter=text mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/javier-munster/nautilus-api.git"
+    },
+    "author": "javier",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/javier-munster/nautilus-api/issues"
+    },
+    "homepage": "https://github.com/javier-munster/nautilus-api#readme",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "compression": "^1.7.4",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "csurf": "^1.11.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "helmet": "^4.5.0",
+        "joi": "^17.4.0",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "chai": "^4.3.4",
+        "eslint": "^7.25.0",
+        "mocha": "^8.3.2",
+        "nodemon": "^2.0.7"
+    }
+}
