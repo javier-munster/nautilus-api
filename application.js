@@ -21,7 +21,6 @@ function launch() {
     app.use(cookieParser(process.env.COOKIE_SECRET));
     app.use(compression());
 
-    app.use('/', express.static(path.join(__dirname, '..', 'dist')));
     app.use('/', routes);
 
     app.listen(process.env.PORT, (err) => {
